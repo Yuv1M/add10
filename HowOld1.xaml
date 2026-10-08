@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HowOld.HowOld1"
+             Title="HowOld1"
+             Background="Pink">
+     
+    <Grid RowDefinitions="*,*" Margin="10">
+
+        <Label TextColor="Red" Text="lala" Grid.Row="0" x:Name="lblResult" />
+        
+        <VerticalStackLayout  Spacing="10" Grid.Row="1" VerticalOptions="End" >
+            <Label Text="Your Name:"/>
+            <Entry/>
+            
+            <Label Text="What is your age:" />
+            <Entry Keyboard="Numeric"/>
+
+            <Button  Clicked="Button_Clicked_Calculate" Text="Calculate" Background="Green" />
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>
