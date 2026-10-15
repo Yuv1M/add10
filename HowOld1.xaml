@@ -11,10 +11,10 @@
         
         <VerticalStackLayout  Spacing="10" Grid.Row="1" VerticalOptions="End" >
             <Label Text="Your Name:"/>
-            <Entry/>
-            
+            <Entry x:Name="entryName" />
+
             <Label Text="What is your age:" />
-            <Entry Keyboard="Numeric"/>
+            <Entry x:Name="entryAge" Keyboard="Numeric"/>
 
             <Button  Clicked="Button_Clicked_Calculate" Text="Calculate" Background="Green" />
         </VerticalStackLayout>
